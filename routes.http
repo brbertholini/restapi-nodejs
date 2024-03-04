@@ -1,4 +1,4 @@
-POST http://localhost:3333/videos
+POST https://restapi-nodejs-q3pl.onrender.com/videos
 Content-type: application/json
 
 {
@@ -9,15 +9,15 @@ Content-type: application/json
 
 ###
 
-GET http://localhost:3333/videos
+GET https://restapi-nodejs-q3pl.onrender.com/videos
 
 ###
 
-GET http://localhost:3333/videos?search=node
+GET https://restapi-nodejs-q3pl.onrender.com/videos?search=node
 
 ###
 
-PUT http://localhost:3333/videos/b025c3cc-07bf-4392-8141-6103342a7124
+PUT https://restapi-nodejs-q3pl.onrender.com/videos/b025c3cc-07bf-4392-8141-6103342a7124
 Content-type: application/json
 
 {
@@ -28,4 +28,4 @@ Content-type: application/json
 
 ###
 
-DELETE http://localhost:3333/videos/d36cbe98-b53d-4fd4-9936-7dc5b37a0250
+DELETE https://restapi-nodejs-q3pl.onrender.com/videos/b025c3cc-07bf-4392-8141-6103342a7124
