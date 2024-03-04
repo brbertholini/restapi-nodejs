@@ -30,11 +30,11 @@ server.get('/videos', async (req) => {
     return videos
 })
 
-server.put('/videos/:id', (req, res) => {
+server.put('/videos/:id', async (req, res) => {
     const videoId = req.params.id
     const { title, description, duration } = req.body
 
-    database.update(videoId, {
+    await database.update(videoId, {
         title,
         description,
         duration,
@@ -43,10 +43,10 @@ server.put('/videos/:id', (req, res) => {
     return res.status(204).send()
 })
 
-server.delete('/videos/:id', (req, res) => {
+server.delete('/videos/:id', async (req, res) => {
     const videoId = req.params.id
 
-    database.delete(videoId)
+    await database.delete(videoId)
 
     return res.status(204).send()
 })
